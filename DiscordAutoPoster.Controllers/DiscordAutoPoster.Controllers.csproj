@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DiscordAutoPoster.Configuration\DiscordAutoPoster.Configuration.csproj" />
+    <ProjectReference Include="..\DiscordAutoPoster.Models\DiscordAutoPoster.Models.csproj" />
+    <ProjectReference Include="..\DiscordAutoPoster.Services\DiscordAutoPoster.Services.csproj" />
+  </ItemGroup>
+
+</Project>

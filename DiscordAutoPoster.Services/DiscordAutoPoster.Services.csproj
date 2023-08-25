@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="3.12.0" />
+    <PackageReference Include="OGA.AppSettings.Writeable" Version="1.5.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DiscordAutoPoster.Configuration\DiscordAutoPoster.Configuration.csproj" />
+    <ProjectReference Include="..\DiscordAutoPoster.Data\DiscordAutoPoster.Data.csproj" />
+    <ProjectReference Include="..\DiscordAutoPoster.Models\DiscordAutoPoster.Models.csproj" />
+  </ItemGroup>
+
+</Project>
