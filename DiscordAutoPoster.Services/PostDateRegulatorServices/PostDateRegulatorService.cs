@@ -16,7 +16,7 @@ namespace DiscordAutoPoster.Services.PostDateRegulatorServices
 
             var autoPostService = scope.ServiceProvider.GetRequiredService<IAutoPostRepository>();
 
-            var autoPosts = (await autoPostService.FindAsync(x => x.Completed)).ToList();
+            var autoPosts = (await autoPostService.FindAsync(x => x.ImagesUrl != null)).ToList();
             var now = DateTime.UtcNow;
 
             for (int i = 0; i < autoPosts.Count; i++)

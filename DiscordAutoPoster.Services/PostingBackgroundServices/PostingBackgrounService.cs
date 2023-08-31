@@ -62,7 +62,7 @@ namespace DiscordAutoPoster.Services.PostingBackgroundServices
 							continue;
 						}
 
-						if (!autoPost.Completed || autoPost.LastTimePosted + autoPostDelay >= DateTime.UtcNow)
+						if (!(autoPost.ImagesUrl is not null) || autoPost.LastTimePosted + autoPostDelay >= DateTime.UtcNow)
 						{
 							continue;
 						}

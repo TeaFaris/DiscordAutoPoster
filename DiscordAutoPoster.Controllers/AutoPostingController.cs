@@ -181,7 +181,7 @@ namespace Controllers
                 .FindAsync(x => x.DiscordId == Context.User.Id);
             var user = users.First();
 
-            if (user.CurrentAutoPost is null || user.CurrentAutoPost.Completed)
+            if (user.CurrentAutoPost is null || user.CurrentAutoPost.ImagesUrl is not null)
             {
                 await RespondAsync("Вы не создаёте объявление в данный момент.", ephemeral: true);
                 return;
