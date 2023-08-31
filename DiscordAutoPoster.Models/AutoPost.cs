@@ -31,7 +31,5 @@ namespace DiscordAutoPoster.Models
         public DateTime LastTimePosted { get; set; }
 
         public string[]? ImagesUrl { get; set; }
-
-        public bool Completed => ImagesUrl is not null;
     }
 }
